@@ -1,12 +1,14 @@
 {
  "Account": {
-     "Username": "xxxxx",
-     "Password": "xxxxx"
+     "Username": "xxxxxxx",
+     "Password": "xxxxxxx",
+     "2FA": "OFF"
  },
+ "Cut Lose": "OFF",
  "Client Seed": {
      "Toggle": "On",
-     "If Random Chance": "Off",
-     "If Lose": "3"
+     "If Random Chance": "On",
+     "If Lose Streak": "0"
   },
  "Currency": "doge",
  "Target Profit": "0",
@@ -15,43 +17,39 @@
  "Interval Change Betset": "1",
  "Config": [{
      "Name Bet Set": "0 - TESTER ",
-     "Base Bet": "0.001",
+     "Base Bet": "0.01",
      "Max Bet": "0",
-     "Chance": "31",
+     "Chance": "17",
      "Random Chance": {
-          "Toggle": "Off",
+          "Toggle": "On",
           "Min": "5",
-          "Max": "45",
-          "If Base Bet": "0",
+          "Max": "49.5",
+          "If Base Bet": "0.3",
           "Reset Chance": "0"
      },
      "Bet": {
-          "Bet": "Hi",
+          "Bet": "Low",
           "Hi / Low": {
-              "Toggle": "On",
-              "If Lose": "2",
-              "If Win": "1",
-              "Repeat Bets":"0"
+              "Toggle": "ON",
+              "If Lose Streak": "3",
+              "If Win Streak": "1",
+              "If Bets":"0"
           }
      },
      "If Win": "1",
-     "If Lose": "1.3",
+     "If Lose": "1.2",
      "Jump If Lose": [{
-          "Name Jump": "100%",
-          "Toggle": "Off",
-          "If Lose": "1",
-          "Repeat Bets": "19"
-          },{
-          "Name Jump": "200%",
-          "Toggle": "Off",
+          "Toggle": "On",
           "If Lose": "2",
-          "Repeat Bets": "19"
+          "Number Of Bets": "18",
+          "Repeat If Win Streak": "0",
+          "Repeat If Profit": "0.1"
           }
      ],
-     "Reset If Win": "0",
-     "Reset If Lose":"0",
-     "Reset If Profit": "0.0001",
-     "Interval": "1"
+     "Reset If Win Streak": "0",
+     "Reset If Lose Streak":"0",
+     "Reset If Profit": "1",
+     "Interval": "80"
      }
   ],
   "Auto Wd": {
